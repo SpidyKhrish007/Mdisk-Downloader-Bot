@@ -16,9 +16,9 @@ from split import TG_SPLIT_SIZE, split_file, get_path_size, ss, temp_channel, is
 with open('config.json', 'r') as f: CONFIGDATA = json.load(f)
 
 # app
-TOKEN = os.environ.get("TOKEN") or CONFIGDATA.get("TOKEN", "")
-HASH = os.environ.get("HASH") or CONFIGDATA.get("HASH", "")
-ID = os.environ.get("ID") or CONFIGDATA.get("ID", "")
+TOKEN = os.environ.get("TOKEN") or CONFIGDATA.get("TOKEN", "6008002657:AAF6ac1qR8f9V7RM9O6aOzgeuy6ASJg87dM")
+HASH = os.environ.get("HASH") or CONFIGDATA.get("HASH", "19f8365d98fb11c9cd6c1eaa8b1fa4b8")
+ID = os.environ.get("ID") or CONFIGDATA.get("ID", "23830477")
 app = Client("my_bot", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
 # preiumum
@@ -31,7 +31,7 @@ BAN = os.environ.get("BAN") or CONFIGDATA.get("BAN", "")
 BANNEDUSERS = BAN.split()
 
 # control
-OWNER = os.environ.get("OWNER") or CONFIGDATA.get("OWNER", "")
+OWNER = os.environ.get("OWNER") or CONFIGDATA.get("OWNER", "1867884587")
 OWNERS = OWNER.split()
 TARGET = os.environ.get("TARGET") or CONFIGDATA.get("TARGET", "")
 LINK = os.environ.get("LINK") or CONFIGDATA.get("LINK", "")
