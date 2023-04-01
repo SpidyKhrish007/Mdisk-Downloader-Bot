@@ -19,7 +19,7 @@ with open('config.json', 'r') as f: CONFIGDATA = json.load(f)
 TOKEN = os.environ.get("") or CONFIGDATA.get("TOKEN", "")
 HASH = os.environ.get("") or CONFIGDATA.get("HASH", "")
 ID = os.environ.get("") or CONFIGDATA.get("ID", "")
-app = Client("my_bot", api_id=ID, api_hash=HASH, bot_token=TOKEN)
+app = Client("ChatBox", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
 # preiumum
 if isPremmium: acc = Client("myacc", api_id=ID, api_hash=HASH, session_string=ss)
